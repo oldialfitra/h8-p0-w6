@@ -1,12 +1,12 @@
 //Store DOM in variable
-var playerScore = 0
-var computerScore = 0
 var playerScoreID = document.getElementById('playerScore')
+var playerScore = 0
 var computerScoreID = document.getElementById('computerScore')
-var result = document.querySelector('.result > h3')
+var computerScore = 0
 var rock = document.getElementById('rock')
 var paper = document.getElementById('paper')
 var scissor = document.getElementById('scissor')
+var result = document.querySelector('.result > h3')
 
 //Function main()
 function main() {
