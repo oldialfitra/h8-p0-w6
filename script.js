@@ -76,17 +76,12 @@ function draw(playerRPS, computerRPS) {
     result.innerHTML = 'It is a draw!'
 }
 
-//Get computer rock paper scissor
-function computer() {
+//Proccess the game
+function ruleGame(playerRPS) {
     var option = ['rock', 'paper', 'scissor']
     var mathRandom = Math.random() * 3
     var randomNumber = Math.floor(mathRandom)
-    return option[randomNumber]
-}
-
-//Proccess the game
-function ruleGame(playerRPS) {
-    var computerRPS = computer()
+    var computerRPS = option[randomNumber]
     if (playerRPS === 'rock' && computerRPS === 'scissor') {
         return win(playerRPS, computerRPS)
     } else if (playerRPS === 'scissor' && computerRPS === 'paper') {
